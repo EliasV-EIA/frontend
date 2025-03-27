@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const AddSlave = () => {
+const EditSlave = () => {
   const [formData, setFormData] = useState({
+    id : '',
     name: '',
     nickname: '',
     origin: '',
@@ -28,10 +29,11 @@ const AddSlave = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .post('http://localhost:3000/slaves', formData) // Make sure to adjust URL
+      .post('http://localhost:3000/slaves/'+formData.id, formData) // Make sure to adjust URL
       .then((response) => {
         alert('Slave added successfully!');
         setFormData({
+          id: '',
           name: '',
           nickname: '',
           origin: '',
@@ -118,4 +120,4 @@ const AddSlave = () => {
   );
 };
 
-export default AddSlave;
+export default EditSlave;

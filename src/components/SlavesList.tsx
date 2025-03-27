@@ -17,7 +17,9 @@ const SlavesList = () => {
 
   return (
     <div>
+      <a href='/'>Return to home page</a>
       <h2>All Slaves</h2>
+       <a href='/add-slave'>Add slave</a>
       <p>Name - Nickname - Origin</p>
       <ul>
         {slaves.map((slave) => (

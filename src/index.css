@@ -2,17 +2,20 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  text-align: center;
+  
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-  background-image: url(./assets/OMRBLN00.png);
+  background-image: url(./assets/OROCKR03.png);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+div{
+  margin: auto;
+}
 a {
   font-weight: 500;
   color: #646cff;
