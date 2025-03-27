@@ -20,11 +20,11 @@ const SlavesList = () => {
       <a href='/'>Return to home page</a>
       <h2>All Slaves</h2>
        <a href='/add-slave'>Add slave</a>
-      <p>Name - Nickname - Origin</p>
+      <p>Name - Nickname - Origin - State - id</p>
       <ul>
         {slaves.map((slave) => (
           <li key={slave.id}>
-            {slave.name} - {slave.nickname} - {slave.origin} - {slave.state}
+            {slave.name} - {slave.nickname} - {slave.origin} - {slave.state} - <a href={`/slave/${slave.id}`}>Details</a>
           </li>
         ))}
       </ul>

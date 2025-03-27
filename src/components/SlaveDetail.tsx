@@ -37,6 +37,7 @@ const SlaveDetail = () => {
       <p>Wins: {slave.wins}</p>
       <p>Losses: {slave.losses}</p>
       <p>State: {slave.state}</p>
+      <a href={`./${slave.id}/edit`}>Edit</a>
     </div>
   );
 };

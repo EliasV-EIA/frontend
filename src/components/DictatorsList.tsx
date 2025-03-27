@@ -23,7 +23,7 @@ const DictatorsList = () => {
       <ul>
         {dictators.map((dictator) => (
           <li key={dictator.id}>
-            {dictator.name} - {dictator.territory} - {dictator.number_of_slaves} - {dictator.loyalty}
+            {dictator.name} - {dictator.territory} - {dictator.number_of_slaves} - {dictator.loyalty} - <a href={`dictator/${dictator.id}`}>Details</a>
           </li>
         ))}
       </ul>

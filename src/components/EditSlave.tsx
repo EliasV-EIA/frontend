@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useParams } from 'react-router-dom';
 
 const EditSlave = () => {
+  const {id} = useParams()
+  
   const [formData, setFormData] = useState({
-    id : '',
     name: '',
     nickname: '',
     origin: '',
@@ -29,11 +31,10 @@ const EditSlave = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .post('http://localhost:3000/slaves/'+formData.id, formData) // Make sure to adjust URL
+      .patch(`http://localhost:3000/slaves/${id}`, formData) // Make sure to adjust URL
       .then((response) => {
-        alert('Slave added successfully!');
+        alert('Slave edited successfully!');
         setFormData({
-          id: '',
           name: '',
           nickname: '',
           origin: '',
@@ -51,7 +52,7 @@ const EditSlave = () => {
 
   return (
     <div>
-      <h2>Add a New Slave</h2>
+      <h2>Edit a Slave</h2>
       <a href='/'>Return to home page</a>
       <h3>Name - Nickname - Origin - Strength - Agility - Wins - Losses - State </h3>
       <form onSubmit={handleSubmit}>
@@ -114,7 +115,7 @@ const EditSlave = () => {
           <option value="FREE">Free</option>
           <option value="ESCAPED">Escaped</option>
         </select>
-        <button type="submit">Add Slave</button>
+        <button type="submit">Edit Slave</button>
       </form>
     </div>
   );
