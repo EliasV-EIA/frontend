@@ -6,7 +6,7 @@ const BattlesList = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/battles') // Ensure this points to your backend endpoint
+      .get('https://partial-backend.onrender.com/battles') // Ensure this points to your backend endpoint
       .then((response) => {
         setBattles(response.data);
       })

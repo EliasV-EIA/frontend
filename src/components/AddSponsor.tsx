@@ -24,8 +24,8 @@ const AddSponsor = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .post('http://localhost:3000/sponsors', formData) // Make sure to adjust URL
-      .then((response) => {
+      .post('https://partial-backend.onrender.com/sponsors', formData) // Make sure to adjust URL
+      .then(() => {
         alert('Sponsor added successfully!');
         setFormData({
           company_name: '',

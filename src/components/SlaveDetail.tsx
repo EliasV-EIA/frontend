@@ -10,7 +10,7 @@ const SlaveDetail = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:3000/slaves/${id}`)
+        .get(`https://partial-backend.onrender.com/slaves/${id}`)
         .then((response) => {
           setSlave(response.data);
         })

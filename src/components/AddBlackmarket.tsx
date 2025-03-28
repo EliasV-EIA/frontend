@@ -25,8 +25,8 @@ const AddBlackmarket = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .post('http://localhost:3000/blackmarket', formData) // Make sure to adjust URL
-      .then((response) => {
+      .post('https://partial-backend.onrender.com/blackmarket', formData) // Make sure to adjust URL
+      .then(() => {
         alert('Blackmarket transaction added successfully!');
         setFormData({
           buyer_id: '',

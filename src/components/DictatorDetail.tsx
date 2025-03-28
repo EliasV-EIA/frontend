@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ const DictatorDetail = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:3000/dictators/${id}`)
+        .get(`https://partial-backend.onrender.com/dictators/${id}`)
         .then((response) => {
           setDictator(response.data);
         })

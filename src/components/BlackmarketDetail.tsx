@@ -10,7 +10,7 @@ const BlackmarketDetail = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:3000/blackmarket/${id}`)
+        .get(`https://partial-backend.onrender.com/blackmarket/${id}`)
         .then((response) => {
           setblackmarket(response.data);
         })

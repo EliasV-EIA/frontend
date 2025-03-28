@@ -31,8 +31,8 @@ const EditSlave = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .patch(`http://localhost:3000/slaves/${id}`, formData) // Make sure to adjust URL
-      .then((response) => {
+      .patch(`https://partial-backend.onrender.com/slaves/${id}`, formData) // Make sure to adjust URL
+      .then(() => {
         alert('Slave edited successfully!');
         setFormData({
           name: '',

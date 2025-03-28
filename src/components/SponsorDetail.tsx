@@ -10,7 +10,7 @@ const SponsorDetail = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:3000/sponsors/${id}`)
+        .get(`https://partial-backend.onrender.com/sponsors/${id}`)
         .then((response) => {
           setSponsor(response.data);
         })

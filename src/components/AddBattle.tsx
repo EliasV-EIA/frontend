@@ -25,8 +25,8 @@ const AddBattle = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .post('http://localhost:3000/battles', formData) // Make sure to adjust URL
-      .then((response) => {
+      .post('http://https://partial-backend.onrender.com/battles', formData) // Make sure to adjust URL
+      .then(() => {
         alert('Battle added successfully!');
         setFormData({
           contestant_1: '',

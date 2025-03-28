@@ -28,8 +28,8 @@ const AddSlave = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .post('http://localhost:3000/slaves', formData) // Make sure to adjust URL
-      .then((response) => {
+      .post('https://partial-backend.onrender.com/slaves', formData) // Make sure to adjust URL
+      .then(() => {
         alert('Slave added successfully!');
         setFormData({
           name: '',

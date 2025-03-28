@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const DictatorsList = () => {
@@ -6,7 +6,7 @@ const DictatorsList = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/dictators') // Ensure this points to your backend endpoint
+      .get('https://partial-backend.onrender.com/dictators') // Ensure this points to your backend endpoint
       .then((response) => {
         setDictators(response.data);
       })
