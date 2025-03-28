@@ -37,6 +37,9 @@ const Welcome =() => {
           <li>
           <a href="/dictators">Full list of dictators</a>
           </li>
+          <li>
+            <a href="/sponsors">Full list of sponsors</a>
+          </li>
           
         </ul>
         </div>
