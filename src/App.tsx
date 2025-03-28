@@ -16,6 +16,10 @@ import BattlesList from './components/BattlesList';
 import EditBattle from './components/EditBattle';
 import BattleDetail from './components/BattleDetail';
 import AddBattle from './components/AddBattle';
+import BlackmarketsList from './components/BlackmarketList';
+import AddBlackmarket from './components/AddBlackmarket';
+import BlackmarketDetail from './components/BlackmarketDetail';
+import EditBlackmarket from './components/EditBlackmarket';
 
 
 const App = () => {
@@ -40,8 +44,10 @@ const App = () => {
         <Route path='/battle/:id/edit' element={<EditBattle />} />
         <Route path='/battle/:id' element={<BattleDetail />} />
         <Route path="/add-battle" element={<AddBattle/>}/>
-
-
+        <Route path="/blackmarkets" element={<BlackmarketsList/>}/>
+        <Route path="/add-blackmarket" element={<AddBlackmarket/>}/>
+        <Route path='/blackmarket/:id' element={<BlackmarketDetail/>}/>
+        <Route path='/blackmarket/:id/edit' element={<EditBlackmarket/>}/>
 
       </Routes>
     </Router>

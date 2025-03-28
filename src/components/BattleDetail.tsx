@@ -29,9 +29,9 @@ const BattleDetail = () => {
 
   return (
     <div>
-      <p>contestant 1: {battle.contestant_1}</p>
-      <p>contestant 2: {battle.contestant_2}</p>
-      <p>Winner: {battle.winner}</p>
+      <p>contestant 1: <a href={`/slave/${battle.contestant_1}`}>{battle.contestant_1}</a></p>
+      <p>contestant 2: <a href={`/slave/${battle.contestant_2}`}>{battle.contestant_2}</a></p>
+      <p>Winner: <a href={`/slave/${battle.winner}`}>{battle.winner}</a></p>
       <p>Death?: {battle.death_occured}</p>
       <p>Injuries: {battle.injuries}</p>
       <p>Date {battle.date}</p>

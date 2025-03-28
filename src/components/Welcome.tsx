@@ -18,7 +18,9 @@ const Welcome =() => {
           <li>
             <a href="/battles">Full list of battles</a>
           </li>
-          
+          <li>
+            <a href="/blackmarkets">Full list of black market transactions</a>
+          </li>
         </ul>
         </div>
 

@@ -19,6 +19,7 @@ const DictatorsList = () => {
     <div>
       <a href='/'>Return to home page</a>
       <h2>All dictators</h2>
+      <a href='/add-dictator'>Add Dictator</a>
       <p>Name - Territory - Number of Slaves - Loyalty</p>
       <ul>
         {dictators.map((dictator) => (
