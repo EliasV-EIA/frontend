@@ -25,7 +25,7 @@ const AddBattle = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .post('http://https://partial-backend.onrender.com/battles', formData) // Make sure to adjust URL
+      .post('https://backend-drf6.onrender.com/battles', formData) // Make sure to adjust URL
       .then(() => {
         alert('Battle added successfully!');
         setFormData({

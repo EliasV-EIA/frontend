@@ -31,7 +31,7 @@ const EditSlave = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .patch(`https://partial-backend.onrender.com/slaves/${id}`, formData) // Make sure to adjust URL
+      .patch(`https://backend-drf6.onrender.com/slaves/${id}`, formData) // Make sure to adjust URL
       .then(() => {
         alert('Slave edited successfully!');
         setFormData({

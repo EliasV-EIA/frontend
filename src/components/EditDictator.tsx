@@ -28,7 +28,7 @@ const EditDictator = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .patch(`https://partial-backend.onrender.com/dictators/${id}`, formData) // Make sure to adjust URL
+      .patch(`https://backend-drf6.onrender.com/dictators/${id}`, formData) // Make sure to adjust URL
       .then(() => {
         alert('Dictator edited successfully!');
         setFormData({

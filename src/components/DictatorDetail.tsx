@@ -10,7 +10,7 @@ const DictatorDetail = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`https://partial-backend.onrender.com/dictators/${id}`)
+        .get(`https://backend-drf6.onrender.com/dictators/${id}`)
         .then((response) => {
           setDictator(response.data);
         })

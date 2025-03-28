@@ -6,7 +6,7 @@ const SlavesList = () => {
 
   useEffect(() => {
     axios
-      .get('https://partial-backend.onrender.com/slaves') // Ensure this points to your backend endpoint
+      .get('https://backend-drf6.onrender.com/slaves') // Ensure this points to your backend endpoint
       .then((response) => {
         setSlaves(response.data);
       })

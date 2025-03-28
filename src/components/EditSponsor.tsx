@@ -26,7 +26,7 @@ const EditSponsor = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .patch(`https://partial-backend.onrender.com/sponsors/${id}`, formData) // Make sure to adjust URL
+      .patch(`https://backend-drf6.onrender.com/sponsors/${id}`, formData) // Make sure to adjust URL
       .then(() => {
         alert('Sponsor edited successfully!');
         setFormData({

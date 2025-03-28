@@ -10,7 +10,7 @@ const BattleDetail = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(`https://partial-backend.onrender.com/battles/${id}`)
+        .get(`https://backend-drf6.onrender.com/battles/${id}`)
         .then((response) => {
           setbattle(response.data);
         })

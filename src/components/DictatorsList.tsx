@@ -6,7 +6,7 @@ const DictatorsList = () => {
 
   useEffect(() => {
     axios
-      .get('https://partial-backend.onrender.com/dictators') // Ensure this points to your backend endpoint
+      .get('https://backend-drf6.onrender.com/dictators') // Ensure this points to your backend endpoint
       .then((response) => {
         setDictators(response.data);
       })

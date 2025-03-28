@@ -6,7 +6,7 @@ const BlackmarketsList = () => {
 
   useEffect(() => {
     axios
-      .get('https://partial-backend.onrender.com/blackmarket') // Ensure this points to your backend endpoint
+      .get('https://backend-drf6.onrender.com/blackmarket') // Ensure this points to your backend endpoint
       .then((response) => {
         setblackmarkets(response.data);
       })

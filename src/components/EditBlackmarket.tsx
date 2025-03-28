@@ -29,7 +29,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .patch(`https://partial-backend.onrender.com/blackmarket/${id}`, formData) // Make sure to adjust URL
+      .patch(`https://backend-drf6.onrender.com/blackmarket/${id}`, formData) // Make sure to adjust URL
       .then(() => {
         alert('Blackmarket edited successfully!');
         setFormData({

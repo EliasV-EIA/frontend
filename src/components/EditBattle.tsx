@@ -28,7 +28,7 @@ const EditBattle = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     axios
-      .patch(`https://partial-backend.onrender.com/battles/${id}`, formData) // Make sure to adjust URL
+      .patch(`https://backend-drf6.onrender.com/battles/${id}`, formData) // Make sure to adjust URL
       .then(() => {
         alert('Battle edited successfully!');
         setFormData({

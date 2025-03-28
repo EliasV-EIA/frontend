@@ -6,7 +6,7 @@ const SponsorsList = () => {
 
   useEffect(() => {
     axios
-      .get('https://partial-backend.onrender.com/sponsors') // Ensure this points to your backend endpoint
+      .get('https://backend-drf6.onrender.com/sponsors') // Ensure this points to your backend endpoint
       .then((response) => {
         setSponsors(response.data);
       })
