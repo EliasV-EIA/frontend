@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [react()],
   base: '/',
   build: {
-    outDir: 'dist',
-  }
-})
+    outDir: 'dist',  // Correct build output folder
+    rollupOptions: {
+      input: 'index.html',
+    },
+  },
+});
