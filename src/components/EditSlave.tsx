@@ -13,7 +13,7 @@ const EditSlave = () => {
     agility: 0,
     wins: 0,
     losses: 0,
-    state: 'alive',
+    state: 'ALIVE',
   });
 
   // Updated handleChange to support both input and select elements
@@ -42,7 +42,7 @@ const EditSlave = () => {
           agility: 0,
           wins: 0,
           losses: 0,
-          state: 'alive',
+          state: 'ALIVE',
         });
       })
       .catch((error) => {

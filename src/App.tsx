@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AddSlave from './components/AddSlave';
 import SlavesList from './components/SlavesList';
@@ -13,6 +12,10 @@ import SponsorsList from './components/SponsorsList';
 import SponsorDetail from './components/SponsorDetail';
 import AddSponsor from './components/AddSponsor';
 import EditSponsor from './components/EditSponsor';
+import BattlesList from './components/BattlesList';
+import EditBattle from './components/EditBattle';
+import BattleDetail from './components/BattleDetail';
+import AddBattle from './components/AddBattle';
 
 
 const App = () => {
@@ -33,6 +36,11 @@ const App = () => {
         <Route path="/sponsor/:id" element={<SponsorDetail />} />
         <Route path="/add-sponsor" element={<AddSponsor/>} />
         <Route path='/sponsor/:id/edit' element={<EditSponsor />} />
+        <Route path="/battles" element={<BattlesList/>}/>
+        <Route path='/battle/:id/edit' element={<EditBattle />} />
+        <Route path='/battle/:id' element={<BattleDetail />} />
+        <Route path="/add-battle" element={<AddBattle/>}/>
+
 
 
       </Routes>
